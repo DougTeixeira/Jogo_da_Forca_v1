@@ -2,7 +2,7 @@ from random import choice
 from desenho import desenho
 
 
-class JogoDaVelha:
+class Forca:
     def __init__(self):
         with open('palavras.txt') as arquivo:
             self.lista_palavras = [palavra.strip() for palavra in arquivo]
@@ -85,5 +85,5 @@ class JogoDaVelha:
             print('\033[0;41mVOCE PERDEU!!!\033[m')
 
 
-jogo = JogoDaVelha()
+jogo = Forca()
 jogo.iniciar()
